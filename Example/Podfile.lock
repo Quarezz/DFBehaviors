@@ -1,0 +1,17 @@
+PODS:
+  - DFBehaviors (0.1.0)
+  - Kiwi (2.3.1)
+
+DEPENDENCIES:
+  - DFBehaviors (from `../`)
+  - Kiwi
+
+EXTERNAL SOURCES:
+  DFBehaviors:
+    :path: ../
+
+SPEC CHECKSUMS:
+  DFBehaviors: c471dcb2a535f599e4298ca157c407907a6d0aef
+  Kiwi: 73e1400209055ee9c8ba78c6012b6b642d0fb9f7
+
+COCOAPODS: 0.34.4
