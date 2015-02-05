@@ -1,8 +1,24 @@
 PODS:
+  - BlocksKit (2.2.5):
+    - BlocksKit/All
+  - BlocksKit/All (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+    - BlocksKit/MessageUI
+    - BlocksKit/UIKit
+  - BlocksKit/Core (2.2.5)
+  - BlocksKit/DynamicDelegate (2.2.5)
+  - BlocksKit/MessageUI (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - BlocksKit/UIKit (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
   - DFBehaviors (0.1.0)
   - Kiwi (2.3.1)
 
 DEPENDENCIES:
+  - BlocksKit
   - DFBehaviors (from `../`)
   - Kiwi
 
@@ -11,7 +27,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  DFBehaviors: 9f0ad662cf043d697f65a086f85be4d3cde7e25c
+  BlocksKit: 4439e7f30a9f90743462ca63545a15c1f4304cef
+  DFBehaviors: 383951d77bac1e208915259c8dc0a42fd5bdfcf6
   Kiwi: 73e1400209055ee9c8ba78c6012b6b642d0fb9f7
 
 COCOAPODS: 0.34.4
