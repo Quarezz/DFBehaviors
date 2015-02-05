@@ -5,11 +5,13 @@
 [![License](https://img.shields.io/cocoapods/l/DFBehaviors.svg?style=flat)](http://cocoadocs.org/docsets/DFBehaviors)
 [![Platform](https://img.shields.io/cocoapods/p/DFBehaviors.svg?style=flat)](http://cocoadocs.org/docsets/DFBehaviors)
 
+## About
+
+DFBehaviors is a collection of usable Behaviors. Inspiried by my friend Krzysztof Zabłocki. Hes article about Behaviors can be found here: http://www.objc.io/issue-13/behaviors.html
+
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
 
 ## Installation
 
