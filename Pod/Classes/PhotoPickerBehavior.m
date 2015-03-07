@@ -7,12 +7,12 @@
 //
 
 #import "PhotoPickerBehavior.h"
-#import <UIActionSheet+BlocksKit.h>
 
 @implementation PhotoPickerBehavior
 
 - (IBAction)pickImageFromButton:(UIButton *)sender
 {
+    /*
     UIActionSheet *actionSheet = [UIActionSheet bk_actionSheetWithTitle:nil];
     
     if (self.targetImageView.image) {
@@ -36,6 +36,7 @@
     
     [actionSheet bk_setCancelButtonWithTitle:NSLocalizedString(@"Cancel", nil) handler:nil];
     [actionSheet showFromRect:sender.frame inView:sender.superview animated:YES];
+     */
 }
 
 - (void)showPickerWithSourceType:(UIImagePickerControllerSourceType)sourceType
