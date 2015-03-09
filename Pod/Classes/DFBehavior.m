@@ -6,9 +6,9 @@
 //
 //
 
-#import "Behavior.h"
+#import "DFBehavior.h"
 
-@implementation Behavior
+@implementation DFBehavior
 
 - (void)setOwner:(id)owner
 {

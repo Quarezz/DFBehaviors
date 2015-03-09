@@ -6,8 +6,8 @@
 //
 //
 
-#import "Behavior.h"
+#import "DFBehavior.h"
 
-@interface ContactPickerBehavior : Behavior
+@interface DFContactPickerBehavior : DFBehavior
 
 @end

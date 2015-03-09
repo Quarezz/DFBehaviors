@@ -10,7 +10,7 @@
 #import "objc/runtime.h"
 #import <UIKit/UIKit.h>
 
-@interface Behavior : UIControl
+@interface DFBehavior : UIControl
 
 @property(nonatomic, weak) IBOutlet id owner;
 

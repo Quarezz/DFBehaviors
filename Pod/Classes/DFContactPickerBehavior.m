@@ -6,8 +6,8 @@
 //
 //
 
-#import "ContactPickerBehavior.h"
+#import "DFContactPickerBehavior.h"
 
-@implementation ContactPickerBehavior
+@implementation DFContactPickerBehavior
 
 @end
