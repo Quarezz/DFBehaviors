@@ -45,6 +45,6 @@
 // DFBehaviors
 #define COCOAPODS_POD_AVAILABLE_DFBehaviors
 #define COCOAPODS_VERSION_MAJOR_DFBehaviors 0
-#define COCOAPODS_VERSION_MINOR_DFBehaviors 0
-#define COCOAPODS_VERSION_PATCH_DFBehaviors 1
+#define COCOAPODS_VERSION_MINOR_DFBehaviors 1
+#define COCOAPODS_VERSION_PATCH_DFBehaviors 0
 

@@ -6,7 +6,7 @@
 //
 //
 
-#import "PhotoPickerBehavior.h"
+#import "DFPhotoPickerBehavior.h"
 
 @implementation PhotoPickerBehavior
 
