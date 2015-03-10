@@ -1,12 +1,12 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
 target 'DFBehaviors', :exclusive => true do
-  pod "DFBehaviors", :path => "../"
+  pod "DFBehaviors"
   pod "BlocksKit"
 end
 
 target 'Tests', :exclusive => true do
-  pod "DFBehaviors", :path => "../"
+  pod "DFBehaviors"
 
   pod 'Kiwi'
 end

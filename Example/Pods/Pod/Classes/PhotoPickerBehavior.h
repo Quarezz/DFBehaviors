@@ -6,7 +6,7 @@
 //
 //
 
-#import "DFBehavior.h"
+#import "Behavior.h"
 
 typedef NS_ENUM(NSUInteger, DFImagePickerBehaviourSourceType) {
     DFImagePickerBehaviourSourceTypeBoth = 0,
@@ -14,7 +14,7 @@ typedef NS_ENUM(NSUInteger, DFImagePickerBehaviourSourceType) {
     DFImagePickerBehaviourSourceTypeLibrary = 2,
 };
 
-@interface DFPhotoPickerBehavior : DFBehavior <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIActionSheetDelegate>
+@interface PhotoPickerBehavior : Behavior <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIActionSheetDelegate>
 
 @property(nonatomic, assign) IBInspectable NSInteger sourceType;
 
