@@ -11,6 +11,7 @@
 @interface DFImagePickerBehavior : DFBehavior <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
 @property (nonatomic, strong) IBOutlet UIImageView *targetImageView;
+@property (nonatomic, strong) IBOutlet UIButton *targetButton;
 
 @property (nonatomic) IBInspectable BOOL cameraAvailable;
 @property (nonatomic) IBInspectable BOOL photoLibraryAvailable;

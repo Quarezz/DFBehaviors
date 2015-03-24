@@ -55,7 +55,12 @@
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
     self.targetImageView.image = info[UIImagePickerControllerEditedImage];
+    self.targetButton.imageView.image = info[UIImagePickerControllerEditedImage];
+    
+    [self.targetButton setImage:info[UIImagePickerControllerEditedImage] forState:UIControlStateNormal];
+    
     self.selectedImage = info[UIImagePickerControllerEditedImage];
+    
     [self.owner dismissViewControllerAnimated:YES completion:nil];
 }
 
