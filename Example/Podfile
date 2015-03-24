@@ -3,6 +3,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 target 'DFBehaviors', :exclusive => true do
   pod "DFBehaviors", :path => "../"
   pod "BlocksKit"
+  pod "UIActionSheet+Blocks"
 end
 
 target 'Tests', :exclusive => true do
