@@ -7,7 +7,6 @@
 //
 
 #import "DFImagePickerBehavior.h"
-#import <UIActionSheet+Blocks.h>
 
 @implementation DFImagePickerBehavior
 
