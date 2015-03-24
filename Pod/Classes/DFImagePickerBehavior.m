@@ -13,6 +13,8 @@
 - (void)pickPhotoButtonAction:(UIButton *)button
 {
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+    alertController.popoverPresentationController.sourceView = button;
+    alertController.popoverPresentationController.sourceRect = button.bounds;
     
     if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera] && self.cameraAvailable)
     {
