@@ -7,6 +7,7 @@
 //
 
 #import "DFViewController.h"
+#import <DFImagePickerBehavior.h>
 
 @interface DFViewController ()
 
@@ -14,17 +15,9 @@
 
 @implementation DFViewController
 
-- (void)viewDidLoad
+- (IBAction)imagePickerBehaviorValueChanged:(DFImagePickerBehavior *)sender
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    
-    
-}
-
-- (IBAction)pickButtonAction:(id)sender
-{
-    
+    NSLog(@"%@", sender.selectedImage);
 }
 
 @end

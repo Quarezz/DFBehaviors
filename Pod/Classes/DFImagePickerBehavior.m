@@ -46,6 +46,7 @@
 - (UIImagePickerController *)imagePickerControllerWithSourceType:(UIImagePickerControllerSourceType)sourceType
 {
     UIImagePickerController *imagePickerController = [[UIImagePickerController alloc] init];
+    imagePickerController.modalPresentationStyle = UIModalPresentationCurrentContext;
     imagePickerController.delegate = self;
     imagePickerController.allowsEditing = self.allowsEditing;
     imagePickerController.sourceType = sourceType;
@@ -64,6 +65,8 @@
     self.selectedImage = info[UIImagePickerControllerEditedImage];
     
     [self.owner dismissViewControllerAnimated:YES completion:nil];
+    
+    [self sendActionsForControlEvents:UIControlEventValueChanged];
 }
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="wyi-kV-sZ1">
+            <objects>
+                <viewController id="ZLn-aB-nRA" customClass="DFViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MEZ-py-Z7p">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="w27-qi-lpA">
+                                <rect key="frame" x="74" y="76" width="172" height="146"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5cX-1r-GWc">
+                                <rect key="frame" x="137" y="276" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pickPhotoButtonAction:" destination="7Hi-F1-l0X" eventType="touchUpInside" id="0IB-xt-Q6O"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="I8W-7P-AKz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dos-x6-zXP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="7Hi-F1-l0X" customClass="DFImagePickerBehavior">
+                    <connections>
+                        <outlet property="owner" destination="ZLn-aB-nRA" id="Ifr-fX-JMd"/>
+                        <outlet property="targetImageView" destination="w27-qi-lpA" id="FIT-1r-fCF"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="746" y="126"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ajw-fo-9j5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Yim-iq-sme" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="J1F-WJ-3Eg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ZLn-aB-nRA" kind="relationship" relationship="rootViewController" id="pQ5-IY-qIB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lsx-SP-Rj4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="214" y="126"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
