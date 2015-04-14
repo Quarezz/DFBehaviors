@@ -12,6 +12,7 @@
 		00810AE18A3D2219F10B8833 /* DFTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D259038ED1BB5A6F79A03CD /* DFTableViewDataSource.m */; };
 		0327B373887808585F597CCA /* NSInvocation+OCMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7442313ABB1797D744B115CE /* NSInvocation+OCMAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		037B3D96BE519C7EF48F537E /* DFCollectionViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9A62CFBFA2768FCDEA2F71 /* DFCollectionViewDataSource.m */; };
+		0391CC731ADD5CED007EBD1C /* RotatingImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0391CC721ADD5CED007EBD1C /* RotatingImagePickerController.m */; };
 		03C2CD2971FF5B8CE5A43444 /* KWMatchers.h in Headers */ = {isa = PBXBuildFile; fileRef = CA4AF86AB5442210E8A20761 /* KWMatchers.h */; };
 		03E55DF91AC1BD0600BF668E /* UIImagePickerController+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E55DF81AC1BD0600BF668E /* UIImagePickerController+Test.m */; };
 		0486C03F6C75F474D5E4DB22 /* NSInvocation+KiwiAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F829BA0332FE1C6FB28A1222 /* NSInvocation+KiwiAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
@@ -347,6 +348,8 @@
 /* Begin PBXFileReference section */
 		01F028FF63D90FD031DA2347 /* KWBlock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWBlock.h; path = Classes/Core/KWBlock.h; sourceTree = "<group>"; };
 		02FE9CFDF88182EF137A5816 /* DFBehaviors.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DFBehaviors.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		0391CC711ADD5CED007EBD1C /* RotatingImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotatingImagePickerController.h; sourceTree = "<group>"; };
+		0391CC721ADD5CED007EBD1C /* RotatingImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotatingImagePickerController.m; sourceTree = "<group>"; };
 		03E55DF71AC1BD0600BF668E /* UIImagePickerController+Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImagePickerController+Test.h"; sourceTree = "<group>"; };
 		03E55DF81AC1BD0600BF668E /* UIImagePickerController+Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImagePickerController+Test.m"; sourceTree = "<group>"; };
 		044459382305F09753D32CA2 /* KWExampleNodeVisitor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWExampleNodeVisitor.h; path = Classes/Core/KWExampleNodeVisitor.h; sourceTree = "<group>"; };
@@ -730,6 +733,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0391CC6D1ADD5C93007EBD1C /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
 		04C845275E1466CC1160BDD0 /* Pods-DFBehaviors */ = {
 			isa = PBXGroup;
 			children = (
@@ -758,6 +768,8 @@
 				5D259038ED1BB5A6F79A03CD /* DFTableViewDataSource.m */,
 				03E55DF71AC1BD0600BF668E /* UIImagePickerController+Test.h */,
 				03E55DF81AC1BD0600BF668E /* UIImagePickerController+Test.m */,
+				0391CC711ADD5CED007EBD1C /* RotatingImagePickerController.h */,
+				0391CC721ADD5CED007EBD1C /* RotatingImagePickerController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -886,6 +898,7 @@
 		78028678F9DA8A2FB4AC9ABC /* Pod */ = {
 			isa = PBXGroup;
 			children = (
+				0391CC6D1ADD5C93007EBD1C /* Categories */,
 				09BFAE0A83F3CF0644BB6003 /* Classes */,
 			);
 			path = Pod;
@@ -1693,6 +1706,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DB12CCCC6276C7B278656B0 /* Pods-DFBehaviors-dummy.m in Sources */,
+				0391CC731ADD5CED007EBD1C /* RotatingImagePickerController.m in Sources */,
 				03E55DF91AC1BD0600BF668E /* UIImagePickerController+Test.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,6 +7,13 @@
 //
 
 #import "DFImagePickerBehavior.h"
+#import "RotatingImagePickerController.h"
+
+@interface DFImagePickerBehavior ()
+
+@property (nonatomic, strong) UIPopoverController *popOverController;
+
+@end
 
 @implementation DFImagePickerBehavior
 
@@ -39,7 +46,12 @@
 - (UIAlertAction *)alertActionWithTitle:(NSString *)title sourceType:(UIImagePickerControllerSourceType)sourceType
 {
     return [UIAlertAction actionWithTitle:title style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
-        [self.owner presentViewController:[self imagePickerControllerWithSourceType:sourceType] animated:YES completion:nil];
+        self.popOverController = [[UIPopoverController alloc] initWithContentViewController:[self imagePickerControllerWithSourceType:sourceType]];
+        
+        [self.popOverController presentPopoverFromRect:self.targetButton.frame inView:self.targetButton permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+        
+        
+        //[self.owner presentViewController:[self imagePickerControllerWithSourceType:sourceType] animated:YES completion:nil];
     }];
 }
 
@@ -73,5 +85,6 @@
 {
     [self.owner dismissViewControllerAnimated:YES completion:nil];
 }
+
 
 @end
