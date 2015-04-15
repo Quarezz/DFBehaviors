@@ -7,7 +7,6 @@
 //
 
 #import "DFImagePickerBehavior.h"
-#import "RotatingImagePickerController.h"
 
 @interface DFImagePickerBehavior ()
 
@@ -72,14 +71,22 @@
 
 #pragma mark - UIImagePickerControllerDelegate
 
-- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
-{
-    self.targetImageView.image = info[UIImagePickerControllerEditedImage];
-    [self.targetButton setImage:info[UIImagePickerControllerEditedImage] forState:UIControlStateNormal];
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info{
+    UIImage *image;
     
-    self.selectedImage = info[UIImagePickerControllerEditedImage];
+    if (self.allowsEditing){
+        image = info[UIImagePickerControllerEditedImage];
+    }
+    else{
+        image = info[UIImagePickerControllerOriginalImage];
+    }
     
-    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) [self.owner dismissViewControllerAnimated:YES completion:nil];
+    self.targetImageView.image = image;
+    [self.targetButton setImage:image forState:UIControlStateNormal];
+    
+    self.selectedImage = image;
+    
+    [self.owner dismissViewControllerAnimated:YES completion:nil];
     
     [self sendActionsForControlEvents:UIControlEventValueChanged];
 }

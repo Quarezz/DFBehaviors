@@ -12,9 +12,7 @@
 		00810AE18A3D2219F10B8833 /* DFTableViewDataSourceBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D259038ED1BB5A6F79A03CD /* DFTableViewDataSourceBehavior.m */; };
 		0327B373887808585F597CCA /* NSInvocation+OCMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7442313ABB1797D744B115CE /* NSInvocation+OCMAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		037B3D96BE519C7EF48F537E /* DFCollectionViewDataSourceBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9A62CFBFA2768FCDEA2F71 /* DFCollectionViewDataSourceBehavior.m */; };
-		0391CC731ADD5CED007EBD1C /* RotatingImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0391CC721ADD5CED007EBD1C /* RotatingImagePickerController.m */; };
 		03C2CD2971FF5B8CE5A43444 /* KWMatchers.h in Headers */ = {isa = PBXBuildFile; fileRef = CA4AF86AB5442210E8A20761 /* KWMatchers.h */; };
-		03E55DF91AC1BD0600BF668E /* UIImagePickerController+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E55DF81AC1BD0600BF668E /* UIImagePickerController+Test.m */; };
 		0486C03F6C75F474D5E4DB22 /* NSInvocation+KiwiAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F829BA0332FE1C6FB28A1222 /* NSInvocation+KiwiAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		04FF8963B45F04AE2E8B09D0 /* A2DynamicDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AD8D94066F6CAAEA909619E /* A2DynamicDelegate.h */; };
 		052CA40EB0E5B461361E7A61 /* KWSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = D70F65310DA724BE52329907 /* KWSpec.h */; };
@@ -348,10 +346,6 @@
 /* Begin PBXFileReference section */
 		01F028FF63D90FD031DA2347 /* KWBlock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWBlock.h; path = Classes/Core/KWBlock.h; sourceTree = "<group>"; };
 		02FE9CFDF88182EF137A5816 /* DFBehaviors.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DFBehaviors.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		0391CC711ADD5CED007EBD1C /* RotatingImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotatingImagePickerController.h; sourceTree = "<group>"; };
-		0391CC721ADD5CED007EBD1C /* RotatingImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotatingImagePickerController.m; sourceTree = "<group>"; };
-		03E55DF71AC1BD0600BF668E /* UIImagePickerController+Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImagePickerController+Test.h"; sourceTree = "<group>"; };
-		03E55DF81AC1BD0600BF668E /* UIImagePickerController+Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImagePickerController+Test.m"; sourceTree = "<group>"; };
 		044459382305F09753D32CA2 /* KWExampleNodeVisitor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWExampleNodeVisitor.h; path = Classes/Core/KWExampleNodeVisitor.h; sourceTree = "<group>"; };
 		0522CBD6FCD546A7B1D7EAE9 /* KWReceiveMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWReceiveMatcher.h; path = Classes/Matchers/KWReceiveMatcher.h; sourceTree = "<group>"; };
 		0A75211ED3D31B3E03B914A8 /* KWInvocationCapturer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWInvocationCapturer.m; path = Classes/Core/KWInvocationCapturer.m; sourceTree = "<group>"; };
@@ -766,10 +760,6 @@
 				D5325B6E2F9FE101F2748EE3 /* DFImagePickerBehavior.m */,
 				C5C16E465373F0C84DCED194 /* DFTableViewDataSourceBehavior.h */,
 				5D259038ED1BB5A6F79A03CD /* DFTableViewDataSourceBehavior.m */,
-				03E55DF71AC1BD0600BF668E /* UIImagePickerController+Test.h */,
-				03E55DF81AC1BD0600BF668E /* UIImagePickerController+Test.m */,
-				0391CC711ADD5CED007EBD1C /* RotatingImagePickerController.h */,
-				0391CC721ADD5CED007EBD1C /* RotatingImagePickerController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -1706,8 +1696,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DB12CCCC6276C7B278656B0 /* Pods-DFBehaviors-dummy.m in Sources */,
-				0391CC731ADD5CED007EBD1C /* RotatingImagePickerController.m in Sources */,
-				03E55DF91AC1BD0600BF668E /* UIImagePickerController+Test.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
