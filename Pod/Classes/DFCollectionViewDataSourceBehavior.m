@@ -6,15 +6,15 @@
 //
 //
 
-#import "DFCollectionViewDataSource.h"
+#import "DFCollectionViewDataSourceBehavior.h"
 
-@interface DFCollectionViewDataSource ()
+@interface DFCollectionViewDataSourceBehavior ()
 
 @property (nonatomic, strong) UICollectionView *collectionView;
 
 @end
 
-@implementation DFCollectionViewDataSource
+@implementation DFCollectionViewDataSourceBehavior
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {

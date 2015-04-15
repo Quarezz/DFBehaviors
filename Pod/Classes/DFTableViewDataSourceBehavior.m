@@ -6,9 +6,19 @@
 //
 //
 
-#import "DFTableViewDataSource.h"
+#import "DFTableViewDataSourceBehavior.h"
 
-@implementation DFTableViewDataSource
+@implementation DFTableViewDataSourceBehavior
+
+- (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section
+{
+    return @"";
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    return @"";
+}
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {

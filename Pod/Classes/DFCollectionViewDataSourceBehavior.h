@@ -8,6 +8,6 @@
 
 #import "DFBehavior.h"
 
-@interface DFCollectionViewDataSource : DFBehavior <UICollectionViewDataSource>
+@interface DFCollectionViewDataSourceBehavior : DFBehavior <UICollectionViewDataSource>
 
 @end

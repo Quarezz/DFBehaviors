@@ -8,6 +8,6 @@
 
 #import "DFBehavior.h"
 
-@interface DFTableViewDataSource : DFBehavior <UITableViewDataSource>
+@interface DFTableViewDataSourceBehavior : DFBehavior <UITableViewDataSource>
 
 @end

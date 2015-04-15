@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		00046715762F7CC28438DD57 /* A2BlockInvocation.m in Sources */ = {isa = PBXBuildFile; fileRef = F470E6D004D1A27144FEADFB /* A2BlockInvocation.m */; };
 		005FC5A1D10B18A2BD1761C9 /* UIBarButtonItem+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = F2EA37A9D2CC8CF518B936EA /* UIBarButtonItem+BlocksKit.m */; };
-		00810AE18A3D2219F10B8833 /* DFTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D259038ED1BB5A6F79A03CD /* DFTableViewDataSource.m */; };
+		00810AE18A3D2219F10B8833 /* DFTableViewDataSourceBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D259038ED1BB5A6F79A03CD /* DFTableViewDataSourceBehavior.m */; };
 		0327B373887808585F597CCA /* NSInvocation+OCMAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7442313ABB1797D744B115CE /* NSInvocation+OCMAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		037B3D96BE519C7EF48F537E /* DFCollectionViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9A62CFBFA2768FCDEA2F71 /* DFCollectionViewDataSource.m */; };
+		037B3D96BE519C7EF48F537E /* DFCollectionViewDataSourceBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9A62CFBFA2768FCDEA2F71 /* DFCollectionViewDataSourceBehavior.m */; };
 		0391CC731ADD5CED007EBD1C /* RotatingImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0391CC721ADD5CED007EBD1C /* RotatingImagePickerController.m */; };
 		03C2CD2971FF5B8CE5A43444 /* KWMatchers.h in Headers */ = {isa = PBXBuildFile; fileRef = CA4AF86AB5442210E8A20761 /* KWMatchers.h */; };
 		03E55DF91AC1BD0600BF668E /* UIImagePickerController+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E55DF81AC1BD0600BF668E /* UIImagePickerController+Test.m */; };
@@ -52,7 +52,7 @@
 		29DA21B67432751E8F7AD5E9 /* DFImagePickerBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = 973BBDB870D7996A6B95D09B /* DFImagePickerBehavior.h */; };
 		2AAA480A41BD1EFE4D329AA5 /* KWRespondToSelectorMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 71331AD1ACE80D02B79FD3C5 /* KWRespondToSelectorMatcher.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		2EE77CBEE3B6E31CD1466BBA /* NSObject+BKBlockExecution.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C4D9835983AE46EE912978 /* NSObject+BKBlockExecution.m */; };
-		2F1F57C1A3EDA7744B266D23 /* DFTableViewDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = C5C16E465373F0C84DCED194 /* DFTableViewDataSource.h */; };
+		2F1F57C1A3EDA7744B266D23 /* DFTableViewDataSourceBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = C5C16E465373F0C84DCED194 /* DFTableViewDataSourceBehavior.h */; };
 		2F4093D959B9A07469F37345 /* KWExampleDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FD97CA1B4050D2DC2F0FF1B /* KWExampleDelegate.h */; };
 		2F54682D5AE508346658DBA3 /* UIWebView+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 51A0D32A2FA495C49EE11115 /* UIWebView+BlocksKit.h */; };
 		314EF0A38DF42D26E48704A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FFD8C9E87937F1764C1FD6A /* Foundation.framework */; };
@@ -107,7 +107,7 @@
 		5A19C504F2697B8F49E9DA69 /* KWStringPrefixMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 31ADF3BC2E04A087A7C8404D /* KWStringPrefixMatcher.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		5AA323EA8A9084483705366F /* KWIntercept.h in Headers */ = {isa = PBXBuildFile; fileRef = A8FB96A649B133E0EDE20055 /* KWIntercept.h */; };
 		5C90B5DCDC61A169827012B0 /* KiwiConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = E13CB46E25D79AF366ED3CFB /* KiwiConfiguration.h */; };
-		5DB73600746D7E9FCF1D414E /* DFCollectionViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9A62CFBFA2768FCDEA2F71 /* DFCollectionViewDataSource.m */; };
+		5DB73600746D7E9FCF1D414E /* DFCollectionViewDataSourceBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9A62CFBFA2768FCDEA2F71 /* DFCollectionViewDataSourceBehavior.m */; };
 		5DBD493BB7B7E3F14C232193 /* KWStringUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 3259F04A41012EAEBE7A33B7 /* KWStringUtilities.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		5E1AA2F6944E1BBD96D6D3A6 /* KWGenericMatchingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A80ECB203B324C02B4020E09 /* KWGenericMatchingAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		5E245ABD66AEAC70D932D776 /* KWMessagePattern.m in Sources */ = {isa = PBXBuildFile; fileRef = CA43F6597F8F5871E7C66160 /* KWMessagePattern.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
@@ -142,7 +142,7 @@
 		7A0B9E08951C6760CD1E53C9 /* KWProbePoller.h in Headers */ = {isa = PBXBuildFile; fileRef = 1892665433129053BE7BA168 /* KWProbePoller.h */; };
 		7CFA0C74162C4988AF484A6E /* NSMutableSet+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DF7BF824794DC77CF7AD054C /* NSMutableSet+BlocksKit.h */; };
 		7D907C6CFAE9877B47E4B024 /* KWReceiveMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 0522CBD6FCD546A7B1D7EAE9 /* KWReceiveMatcher.h */; };
-		7E82D7804F2DBF570FBCA03C /* DFCollectionViewDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = E0F325207F88D1A7D5DA6CBA /* DFCollectionViewDataSource.h */; };
+		7E82D7804F2DBF570FBCA03C /* DFCollectionViewDataSourceBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = E0F325207F88D1A7D5DA6CBA /* DFCollectionViewDataSourceBehavior.h */; };
 		7E96A7779258F4D021045380 /* NSObject+KiwiMockAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AD670C9C81506D8390CDB46 /* NSObject+KiwiMockAdditions.h */; };
 		7EE13E910131D8AED5C877E5 /* NSObject+BKBlockExecution.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FBCE82E9DA9426726ADC4F6 /* NSObject+BKBlockExecution.h */; };
 		7FB4C3CAB4F352F0C78C6565 /* NSObject+BKAssociatedObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A7CC23378BA971A6E431C8D /* NSObject+BKAssociatedObjects.m */; };
@@ -209,7 +209,7 @@
 		B407803EE64569944BE51403 /* KWExampleSuite.m in Sources */ = {isa = PBXBuildFile; fileRef = 86ECAAA4F6EF6B02BE56A26E /* KWExampleSuite.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		B40E59D8B3F15FF057D8FB81 /* KWChangeMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1BB90E721C3532DE920E9F /* KWChangeMatcher.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		B42A8C947EE4B47999109BB4 /* KWSuiteConfigurationBase.h in Headers */ = {isa = PBXBuildFile; fileRef = AF75C4A3D58F7F944ACC3EBF /* KWSuiteConfigurationBase.h */; };
-		B57F8C4B1F58D5D554182D98 /* DFTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D259038ED1BB5A6F79A03CD /* DFTableViewDataSource.m */; };
+		B57F8C4B1F58D5D554182D98 /* DFTableViewDataSourceBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D259038ED1BB5A6F79A03CD /* DFTableViewDataSourceBehavior.m */; };
 		B831EB4F8A92CEE950CA3336 /* KWMatching.h in Headers */ = {isa = PBXBuildFile; fileRef = 89ADE647098961FE767B58A5 /* KWMatching.h */; };
 		B961C740C48407E64A3E1D5B /* NSObject+KiwiStubAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA202B83985A73936D0D880 /* NSObject+KiwiStubAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		BBE6AE2EB4917C776F19D0E8 /* KWBeWithinMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = CFE2BADAA83F13371A36C009 /* KWBeWithinMatcher.h */; };
@@ -243,7 +243,7 @@
 		D5E83117A7CE69BC2DA6A42E /* KWFailure.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FF50E9B722B4E6FD16ED2AD /* KWFailure.h */; };
 		D70A042916DAD027DA1DBA5D /* KWStringContainsMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = E339181110AADBAFCA91AAD5 /* KWStringContainsMatcher.h */; };
 		D8B2DC87C76AFD8E9CA5F957 /* KWEqualMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C264A7AE3E04981219FAB03 /* KWEqualMatcher.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		D96D8EEF41EA5D610D0E9A5F /* DFTableViewDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = C5C16E465373F0C84DCED194 /* DFTableViewDataSource.h */; };
+		D96D8EEF41EA5D610D0E9A5F /* DFTableViewDataSourceBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = C5C16E465373F0C84DCED194 /* DFTableViewDataSourceBehavior.h */; };
 		D99EC126EB973AEE9B4A4D15 /* NSObject+KiwiMockAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 249278DB715DB5251475F0EE /* NSObject+KiwiMockAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		DA62F855C3F21469AA04D89B /* DFBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = C938AE727D2DEA0D1FB2E527 /* DFBehavior.m */; };
 		DEA40222EE1D7E2DC63B7B12 /* KiwiMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F45FEA7BAC0DFC69B2CEE91 /* KiwiMacros.h */; };
@@ -270,7 +270,7 @@
 		EF2A9EA3DF824902AF65EC1F /* BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2936E04BC83494523DDE6CBB /* BlocksKit.h */; };
 		EF376F8CD2C2B65C8D5D663A /* NSOrderedSet+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 673D0FAAE8478383E9B3624E /* NSOrderedSet+BlocksKit.m */; };
 		F0783D8651FF87C00D12B005 /* NSMutableSet+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D81376589B86B2D75849B6B0 /* NSMutableSet+BlocksKit.m */; };
-		F0FD58814290FFEAF0666DF6 /* DFCollectionViewDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = E0F325207F88D1A7D5DA6CBA /* DFCollectionViewDataSource.h */; };
+		F0FD58814290FFEAF0666DF6 /* DFCollectionViewDataSourceBehavior.h in Headers */ = {isa = PBXBuildFile; fileRef = E0F325207F88D1A7D5DA6CBA /* DFCollectionViewDataSourceBehavior.h */; };
 		F1BED388844CC70899A0116E /* KWPendingNode.m in Sources */ = {isa = PBXBuildFile; fileRef = CBFF587F20D8D70475FD12BC /* KWPendingNode.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		F2272A50EE641328E45049AD /* NSObject+A2BlockDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C257B308C3692CFBFB9338EA /* NSObject+A2BlockDelegate.m */; };
 		F2345D596E108027C5A8F087 /* KWStub.h in Headers */ = {isa = PBXBuildFile; fileRef = 34D4DB7098984DD8FD713BA7 /* KWStub.h */; };
@@ -401,7 +401,7 @@
 		2B06E8E0398D8EC202FC9AD4 /* NSInvocation+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSInvocation+BlocksKit.h"; path = "BlocksKit/Core/NSInvocation+BlocksKit.h"; sourceTree = "<group>"; };
 		2B38C635B585E2CC4D7EB9EE /* UIControl+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIControl+BlocksKit.m"; path = "BlocksKit/UIKit/UIControl+BlocksKit.m"; sourceTree = "<group>"; };
 		2B713D852AA55DB16A0BA979 /* NSTimer+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSTimer+BlocksKit.h"; path = "BlocksKit/Core/NSTimer+BlocksKit.h"; sourceTree = "<group>"; };
-		2D9A62CFBFA2768FCDEA2F71 /* DFCollectionViewDataSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DFCollectionViewDataSource.m; sourceTree = "<group>"; };
+		2D9A62CFBFA2768FCDEA2F71 /* DFCollectionViewDataSourceBehavior.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DFCollectionViewDataSourceBehavior.m; sourceTree = "<group>"; };
 		2DE39CF915F7FCB1A65431F5 /* Pods-Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		2EED11DB2E1B1F5302253834 /* NSMutableOrderedSet+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableOrderedSet+BlocksKit.h"; path = "BlocksKit/Core/NSMutableOrderedSet+BlocksKit.h"; sourceTree = "<group>"; };
 		2F1EB8A403BAACE9DCE10332 /* KWInequalityMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWInequalityMatcher.m; path = Classes/Matchers/KWInequalityMatcher.m; sourceTree = "<group>"; };
@@ -463,7 +463,7 @@
 		5AFA121D1D6273F2813780DD /* Pods-Tests-DFBehaviors.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-DFBehaviors.xcconfig"; path = "../Pods-Tests-DFBehaviors/Pods-Tests-DFBehaviors.xcconfig"; sourceTree = "<group>"; };
 		5B3D4EB0F95A69478DC2ECA5 /* KWMock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWMock.h; path = Classes/Mocking/KWMock.h; sourceTree = "<group>"; };
 		5B8DE80BB88A6C845EE2FC28 /* KWNull.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWNull.h; path = Classes/Core/KWNull.h; sourceTree = "<group>"; };
-		5D259038ED1BB5A6F79A03CD /* DFTableViewDataSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DFTableViewDataSource.m; sourceTree = "<group>"; };
+		5D259038ED1BB5A6F79A03CD /* DFTableViewDataSourceBehavior.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DFTableViewDataSourceBehavior.m; sourceTree = "<group>"; };
 		5FA202B83985A73936D0D880 /* NSObject+KiwiStubAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+KiwiStubAdditions.m"; path = "Classes/Stubbing/NSObject+KiwiStubAdditions.m"; sourceTree = "<group>"; };
 		604052266BDF321A2DD2C0A5 /* NSObject+A2DynamicDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+A2DynamicDelegate.m"; path = "BlocksKit/DynamicDelegate/NSObject+A2DynamicDelegate.m"; sourceTree = "<group>"; };
 		63203C9BA7291A58A83B4E2A /* Pods-DFBehaviors-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DFBehaviors-dummy.m"; sourceTree = "<group>"; };
@@ -569,7 +569,7 @@
 		C3025C642E74CC355BBD2DE8 /* KWBeWithinMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWBeWithinMatcher.m; path = Classes/Matchers/KWBeWithinMatcher.m; sourceTree = "<group>"; };
 		C395E9828C469FD58FB416EC /* KWVerifying.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWVerifying.h; path = Classes/Verifiers/KWVerifying.h; sourceTree = "<group>"; };
 		C513C790BC928BA8797AAA90 /* KWObjCUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWObjCUtilities.h; path = Classes/Core/KWObjCUtilities.h; sourceTree = "<group>"; };
-		C5C16E465373F0C84DCED194 /* DFTableViewDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DFTableViewDataSource.h; sourceTree = "<group>"; };
+		C5C16E465373F0C84DCED194 /* DFTableViewDataSourceBehavior.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DFTableViewDataSourceBehavior.h; sourceTree = "<group>"; };
 		C5C4D9835983AE46EE912978 /* NSObject+BKBlockExecution.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+BKBlockExecution.m"; path = "BlocksKit/Core/NSObject+BKBlockExecution.m"; sourceTree = "<group>"; };
 		C8C69FB4B8FD7A1A500A5541 /* KWRegularExpressionPatternMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWRegularExpressionPatternMatcher.m; path = Classes/Matchers/KWRegularExpressionPatternMatcher.m; sourceTree = "<group>"; };
 		C938AE727D2DEA0D1FB2E527 /* DFBehavior.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DFBehavior.m; sourceTree = "<group>"; };
@@ -612,7 +612,7 @@
 		DF0EDADE231094816ACA967A /* KWConformToProtocolMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWConformToProtocolMatcher.h; path = Classes/Matchers/KWConformToProtocolMatcher.h; sourceTree = "<group>"; };
 		DF7BF824794DC77CF7AD054C /* NSMutableSet+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableSet+BlocksKit.h"; path = "BlocksKit/Core/NSMutableSet+BlocksKit.h"; sourceTree = "<group>"; };
 		E0824AF4788F94E8EB285B60 /* Pods-DFBehaviors-UIActionSheet+Blocks-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DFBehaviors-UIActionSheet+Blocks-prefix.pch"; sourceTree = "<group>"; };
-		E0F325207F88D1A7D5DA6CBA /* DFCollectionViewDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DFCollectionViewDataSource.h; sourceTree = "<group>"; };
+		E0F325207F88D1A7D5DA6CBA /* DFCollectionViewDataSourceBehavior.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DFCollectionViewDataSourceBehavior.h; sourceTree = "<group>"; };
 		E13CB46E25D79AF366ED3CFB /* KiwiConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KiwiConfiguration.h; path = Classes/Core/KiwiConfiguration.h; sourceTree = "<group>"; };
 		E1AF8A53459B87600DC651BC /* KWBeEmptyMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWBeEmptyMatcher.h; path = Classes/Matchers/KWBeEmptyMatcher.h; sourceTree = "<group>"; };
 		E1D665B7BBD176DABE0E18CF /* KWExampleNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWExampleNode.h; path = Classes/Nodes/KWExampleNode.h; sourceTree = "<group>"; };
@@ -760,12 +760,12 @@
 			children = (
 				54B98252AAA301B456BFC57D /* DFBehavior.h */,
 				C938AE727D2DEA0D1FB2E527 /* DFBehavior.m */,
-				E0F325207F88D1A7D5DA6CBA /* DFCollectionViewDataSource.h */,
-				2D9A62CFBFA2768FCDEA2F71 /* DFCollectionViewDataSource.m */,
+				E0F325207F88D1A7D5DA6CBA /* DFCollectionViewDataSourceBehavior.h */,
+				2D9A62CFBFA2768FCDEA2F71 /* DFCollectionViewDataSourceBehavior.m */,
 				973BBDB870D7996A6B95D09B /* DFImagePickerBehavior.h */,
 				D5325B6E2F9FE101F2748EE3 /* DFImagePickerBehavior.m */,
-				C5C16E465373F0C84DCED194 /* DFTableViewDataSource.h */,
-				5D259038ED1BB5A6F79A03CD /* DFTableViewDataSource.m */,
+				C5C16E465373F0C84DCED194 /* DFTableViewDataSourceBehavior.h */,
+				5D259038ED1BB5A6F79A03CD /* DFTableViewDataSourceBehavior.m */,
 				03E55DF71AC1BD0600BF668E /* UIImagePickerController+Test.h */,
 				03E55DF81AC1BD0600BF668E /* UIImagePickerController+Test.m */,
 				0391CC711ADD5CED007EBD1C /* RotatingImagePickerController.h */,
@@ -1247,9 +1247,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A02CED135223E39EF470F0FF /* DFBehavior.h in Headers */,
-				F0FD58814290FFEAF0666DF6 /* DFCollectionViewDataSource.h in Headers */,
+				F0FD58814290FFEAF0666DF6 /* DFCollectionViewDataSourceBehavior.h in Headers */,
 				1DD02305F4F380FEBD7D6C63 /* DFImagePickerBehavior.h in Headers */,
-				2F1F57C1A3EDA7744B266D23 /* DFTableViewDataSource.h in Headers */,
+				2F1F57C1A3EDA7744B266D23 /* DFTableViewDataSourceBehavior.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1258,9 +1258,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				46A82200651666DC65F7330D /* DFBehavior.h in Headers */,
-				7E82D7804F2DBF570FBCA03C /* DFCollectionViewDataSource.h in Headers */,
+				7E82D7804F2DBF570FBCA03C /* DFCollectionViewDataSourceBehavior.h in Headers */,
 				29DA21B67432751E8F7AD5E9 /* DFImagePickerBehavior.h in Headers */,
-				D96D8EEF41EA5D610D0E9A5F /* DFTableViewDataSource.h in Headers */,
+				D96D8EEF41EA5D610D0E9A5F /* DFTableViewDataSourceBehavior.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1644,9 +1644,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA62F855C3F21469AA04D89B /* DFBehavior.m in Sources */,
-				037B3D96BE519C7EF48F537E /* DFCollectionViewDataSource.m in Sources */,
+				037B3D96BE519C7EF48F537E /* DFCollectionViewDataSourceBehavior.m in Sources */,
 				686D1E798703981B04C37BF1 /* DFImagePickerBehavior.m in Sources */,
-				B57F8C4B1F58D5D554182D98 /* DFTableViewDataSource.m in Sources */,
+				B57F8C4B1F58D5D554182D98 /* DFTableViewDataSourceBehavior.m in Sources */,
 				A7011081B9718087D690C10C /* Pods-DFBehaviors-DFBehaviors-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1730,9 +1730,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B26F2A6AFA6B9A059AF71A70 /* DFBehavior.m in Sources */,
-				5DB73600746D7E9FCF1D414E /* DFCollectionViewDataSource.m in Sources */,
+				5DB73600746D7E9FCF1D414E /* DFCollectionViewDataSourceBehavior.m in Sources */,
 				6A8370A1EE1E7F06DE1179FB /* DFImagePickerBehavior.m in Sources */,
-				00810AE18A3D2219F10B8833 /* DFTableViewDataSource.m in Sources */,
+				00810AE18A3D2219F10B8833 /* DFTableViewDataSourceBehavior.m in Sources */,
 				83B204D5F0BA9EB112E41FB7 /* Pods-Tests-DFBehaviors-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
