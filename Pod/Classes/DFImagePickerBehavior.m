@@ -46,12 +46,17 @@
 - (UIAlertAction *)alertActionWithTitle:(NSString *)title sourceType:(UIImagePickerControllerSourceType)sourceType
 {
     return [UIAlertAction actionWithTitle:title style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
-        self.popOverController = [[UIPopoverController alloc] initWithContentViewController:[self imagePickerControllerWithSourceType:sourceType]];
         
-        [self.popOverController presentPopoverFromRect:self.targetButton.frame inView:self.targetButton permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
-        
-        
-        //[self.owner presentViewController:[self imagePickerControllerWithSourceType:sourceType] animated:YES completion:nil];
+        if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+        {
+            self.popOverController = [[UIPopoverController alloc] initWithContentViewController:[self imagePickerControllerWithSourceType:sourceType]];
+            
+            [self.popOverController presentPopoverFromRect:self.targetButton.frame inView:self.targetButton permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+        }
+        else if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+        {
+            [self.owner presentViewController:[self imagePickerControllerWithSourceType:sourceType] animated:YES completion:nil];
+        }
     }];
 }
 
@@ -70,13 +75,11 @@
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
     self.targetImageView.image = info[UIImagePickerControllerEditedImage];
-    self.targetButton.imageView.image = info[UIImagePickerControllerEditedImage];
-    
     [self.targetButton setImage:info[UIImagePickerControllerEditedImage] forState:UIControlStateNormal];
     
     self.selectedImage = info[UIImagePickerControllerEditedImage];
     
-    [self.owner dismissViewControllerAnimated:YES completion:nil];
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) [self.owner dismissViewControllerAnimated:YES completion:nil];
     
     [self sendActionsForControlEvents:UIControlEventValueChanged];
 }
@@ -85,6 +88,5 @@
 {
     [self.owner dismissViewControllerAnimated:YES completion:nil];
 }
-
 
 @end
