@@ -18,7 +18,7 @@
 
 - (void)pickPhotoButtonAction:(UIButton *)button
 {
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Choose photo source" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
     alertController.popoverPresentationController.sourceView = button;
     alertController.popoverPresentationController.sourceRect = button.bounds;
     
@@ -31,6 +31,10 @@
     {
         [alertController addAction:[self alertActionWithTitle:@"Photo library" sourceType:UIImagePickerControllerSourceTypePhotoLibrary]];
     }
+    
+    [alertController addAction:[UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
+        [self.owner dismissViewControllerAnimated:YES completion:nil];
+    }]];
     
     if (alertController.actions.count) [self.owner presentViewController:alertController animated:YES completion:nil];
 }
