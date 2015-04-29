@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DFViewController : UIViewController
+@interface DFImagePickerViewController : UIViewController
 
 @end

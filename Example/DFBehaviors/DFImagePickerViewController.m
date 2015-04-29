@@ -6,14 +6,14 @@
 //  Copyright (c) 2014 Digitalforms. All rights reserved.
 //
 
-#import "DFViewController.h"
+#import "DFImagePickerViewController.h"
 #import <DFImagePickerBehavior.h>
 
-@interface DFViewController ()
+@interface DFImagePickerViewController ()
 
 @end
 
-@implementation DFViewController
+@implementation DFImagePickerViewController
 
 - (IBAction)imagePickerBehaviorValueChanged:(DFImagePickerBehavior *)sender
 {
