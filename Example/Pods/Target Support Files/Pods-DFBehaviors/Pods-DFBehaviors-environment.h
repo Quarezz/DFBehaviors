@@ -45,12 +45,12 @@
 // DFBehaviors
 #define COCOAPODS_POD_AVAILABLE_DFBehaviors
 #define COCOAPODS_VERSION_MAJOR_DFBehaviors 0
-#define COCOAPODS_VERSION_MINOR_DFBehaviors 0
+#define COCOAPODS_VERSION_MINOR_DFBehaviors 1
 #define COCOAPODS_VERSION_PATCH_DFBehaviors 3
 
 // UIActionSheet+Blocks
 #define COCOAPODS_POD_AVAILABLE_UIActionSheet_Blocks
 #define COCOAPODS_VERSION_MAJOR_UIActionSheet_Blocks 0
-#define COCOAPODS_VERSION_MINOR_UIActionSheet_Blocks 8
-#define COCOAPODS_VERSION_PATCH_UIActionSheet_Blocks 1
+#define COCOAPODS_VERSION_MINOR_UIActionSheet_Blocks 9
+#define COCOAPODS_VERSION_PATCH_UIActionSheet_Blocks 0
 

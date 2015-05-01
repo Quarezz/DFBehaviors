@@ -12,8 +12,6 @@
 
 - (void)chooseContactButtonAction:(id)button
 {
-    NSLog(@"Choose");
-    
     ABPeoplePickerNavigationController *personViewController = [[ABPeoplePickerNavigationController alloc] init];
     personViewController.peoplePickerDelegate = self;
     [self.owner presentViewController:personViewController animated:YES completion:nil];
@@ -35,14 +33,16 @@
     self.personOrganization = (__bridge NSString *)ABRecordCopyValue(person, kABPersonOrganizationProperty);
     self.personJobTitle = (__bridge NSString *)ABRecordCopyValue(person, kABPersonJobTitleProperty);
     self.personDepartament = (__bridge NSString *)ABRecordCopyValue(person, kABPersonDepartmentProperty);
-    self.personEmail = (__bridge NSString *)ABRecordCopyValue(person, kABPersonEmailProperty);
-    self.personBirthday = (__bridge NSString *)ABRecordCopyValue(person, kABPersonBirthdayProperty);
+    
+    ABMutableMultiValueRef email = ABRecordCopyValue( person, kABPersonEmailProperty );
+    CFStringRef emailRef = ABMultiValueCopyValueAtIndex(email, 0);
+    
+    self.personEmail = (__bridge NSString *)emailRef;
+    self.personBirthday = (__bridge NSDate *)ABRecordCopyValue(person, kABPersonBirthdayProperty);
     self.personNote = (__bridge NSString *)ABRecordCopyValue(person, kABPersonNoteProperty);
     
     self.personCreationDate = (__bridge NSDate *)ABRecordCopyValue(person, kABPersonCreationDateProperty);
     self.personModificationDate = (__bridge NSDate *)ABRecordCopyValue(person, kABPersonModificationDateProperty);
-
-    self.personAddress = (__bridge NSString *)ABRecordCopyValue(person, kABPersonAddressProperty);
     
     CFTypeRef addressProperty = ABRecordCopyValue((ABRecordRef)person, kABPersonAddressProperty);
     
@@ -57,6 +57,13 @@
         if (addressDict[@"Country"]) self.personAddressCountry = addressDict[@"Country"];
         if (addressDict[@"CountryCode"]) self.personAddressCountryCode = addressDict[@"CountryCode"];
     }
+    
+    [self sendActionsForControlEvents:UIControlEventValueChanged];
+}
+
+- (NSString *)description
+{
+    return [NSString stringWithFormat:@"Person data -> first name: %@ last name: %@ creation date: %@ modification date: %@", self.personFirstName, self.personLasttName, self.personCreationDate, self.personModificationDate];
 }
 
 @end

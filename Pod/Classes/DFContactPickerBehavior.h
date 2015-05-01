@@ -29,13 +29,12 @@
 @property (nonatomic, strong) NSString *personJobTitle;
 @property (nonatomic, strong) NSString *personDepartament;
 @property (nonatomic, strong) NSString *personEmail;
-@property (nonatomic, strong) NSString *personBirthday;
+@property (nonatomic, strong) NSDate *personBirthday;
 @property (nonatomic, strong) NSString *personNote;
 
 @property (nonatomic, strong) NSDate *personCreationDate;
 @property (nonatomic, strong) NSDate *personModificationDate;
 
-@property (nonatomic, strong) NSString *personAddress;
 @property (nonatomic, strong) NSString *personAddressStreet;
 @property (nonatomic, strong) NSString *personAddressCity;
 @property (nonatomic, strong) NSString *personAddressState;
