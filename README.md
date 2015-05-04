@@ -6,11 +6,11 @@
 
 ## About
 
-DFBehaviors is a collection of usable Behaviors. Inspiried by my friend Krzysztof Zabłocki. Hes article about Behaviors can be found here: http://www.objc.io/issue-13/behaviors.html
+DFBehaviors is a collection of usable Behaviors. Inspiried by my friend Krzysztof Zabłocki. His article about Behaviors can be found here: http://www.objc.io/issue-13/behaviors.html
 
 ## How this works?
 
-You simply drop NSObject to XIB, change its class to some of Behavior, and connect all needed IBOutlets and/or change settings in interface builder with IBInspectable properties. All behaviors inhertis from UIControl, so you can also observing value change notifications. Both solutions are shown in examples.
+You simply drop NSObject to XIB, change its class to some of Behavior, and connect all needed IBOutlets and/or change settings in interface builder with IBInspectable properties. All behaviors inhertis from UIControl, so you can also observe value change notifications. Both solutions are shown in examples.
 
 ## Installation
 
