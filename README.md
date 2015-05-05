@@ -14,9 +14,9 @@ You simply drop NSObject to XIB, change its class to some of Behavior, and conne
 
 ## Will be implemented soon
 
-DFTableViewDataSourceBehavior
-DFCollectionViewDataSourceBehavior
-DFSoundPlayerBehavior
+DFTableViewDataSourceBehavior   
+DFCollectionViewDataSourceBehavior  
+DFSoundPlayerBehavior   
 
 ## Installation
 
