@@ -12,6 +12,12 @@ DFBehaviors is a collection of usable Behaviors. Inspiried by my friend Krzyszto
 
 You simply drop NSObject to XIB, change its class to some of Behavior, and connect all needed IBOutlets and/or change settings in interface builder with IBInspectable properties. All behaviors inhertis from UIControl, so you can also observe value change notifications. Both solutions are shown in examples.
 
+## Will be implemented soon
+
+DFTableViewDataSourceBehavior
+DFCollectionViewDataSourceBehavior
+DFSoundPlayerBehavior
+
 ## Installation
 
 DFBehaviors is available through [CocoaPods](http://cocoapods.org). To install
