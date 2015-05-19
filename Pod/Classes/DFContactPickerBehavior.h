@@ -42,6 +42,8 @@
 @property (nonatomic, strong) NSString *personAddressCountry;
 @property (nonatomic, strong) NSString *personAddressCountryCode;
 
+@property (nonatomic, strong) NSArray *personPhoneNumbers;
+
 - (IBAction)chooseContactButtonAction:(UIButton *)button;
 
 @end
