@@ -48,7 +48,10 @@
     
     [self.photo setImage:[UIImage imageWithData:sender.personPhoto scale:1]];
     
+    [self.tableView reloadData];
+    
     NSLog(@"%@", sender);
+    NSLog(@"%@ %@", self.firstNameLabel.text, self.lastNameLabel.text);
 }
 
 @end
