@@ -58,6 +58,19 @@
         if (addressDict[@"CountryCode"]) self.personAddressCountryCode = addressDict[@"CountryCode"];
     }
     
+    ABMultiValueRef phones =(__bridge ABMultiValueRef)((__bridge NSString*)ABRecordCopyValue(person, kABPersonPhoneProperty));
+    NSString* mobileLabel;
+    NSMutableArray *phoneNumbers = [NSMutableArray array];
+    for(CFIndex i = 0; i < ABMultiValueGetCount(phones); i++) {
+        mobileLabel = (__bridge NSString*)ABMultiValueCopyLabelAtIndex(phones, i);
+        if([mobileLabel isEqualToString:(NSString *)kABPersonPhoneMobileLabel])
+        {
+            [phoneNumbers addObject:(__bridge NSString*)ABMultiValueCopyValueAtIndex(phones, i)];
+        }
+    }
+    
+    self.personPhoneNumbers = phoneNumbers;
+    
     [self sendActionsForControlEvents:UIControlEventValueChanged];
 }
 
