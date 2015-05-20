@@ -45,6 +45,10 @@
     self.zipLabel.text = sender.personAddressZIP;
     self.countryLabel.text = sender.personAddressCountry;
     self.countryCodeLabel.text = sender.personAddressCountryCode;
+    
+    [self.photo setImage:[UIImage imageWithData:sender.personPhoto scale:1]];
+    
+    NSLog(@"%@", sender);
 }
 
 @end

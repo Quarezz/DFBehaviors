@@ -34,6 +34,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *zipLabel;
 @property (weak, nonatomic) IBOutlet UILabel *countryLabel;
 @property (weak, nonatomic) IBOutlet UILabel *countryCodeLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *photo;
 
 - (IBAction)contactBehaviorValueChanged:(id)sender;
 

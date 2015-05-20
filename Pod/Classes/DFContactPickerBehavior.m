@@ -58,6 +58,13 @@
         if (addressDict[@"CountryCode"]) self.personAddressCountryCode = addressDict[@"CountryCode"];
     }
     
+    if (person != nil && ABPersonHasImageData(person))
+    {
+        if ( &ABPersonCopyImageDataWithFormat != nil ) {
+            self.personPhoto = (__bridge NSData *)ABPersonCopyImageDataWithFormat(person, kABPersonImageFormatThumbnail);
+        }
+    }
+    
     ABMultiValueRef phones =(__bridge ABMultiValueRef)((__bridge NSString*)ABRecordCopyValue(person, kABPersonPhoneProperty));
     NSString* mobileLabel;
     NSMutableArray *phoneNumbers = [NSMutableArray array];
