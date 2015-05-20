@@ -57,6 +57,7 @@
                     <connections>
                         <segue destination="vXZ-lx-hvc" kind="push" identifier="gotoimage" id="SkA-QM-dnF"/>
                         <segue destination="9th-NA-HO2" kind="push" identifier="gotocontact" id="JQ5-6c-Rrh"/>
+                        <segue destination="WDA-m9-QUY" kind="push" identifier="gotosound" id="4Rs-xj-wTc"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ege-xh-drd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -119,6 +120,68 @@
                 </customObject>
             </objects>
             <point key="canvasLocation" x="888" y="196"/>
+        </scene>
+        <!--Sound Player View Controller-->
+        <scene sceneID="bza-6R-LLW">
+            <objects>
+                <viewController id="WDA-m9-QUY" customClass="DFSoundPlayerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AOw-sr-Ka4"/>
+                        <viewControllerLayoutGuide type="bottom" id="YEt-aA-d6J"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="K4a-eV-uvV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGK-lO-B4l">
+                                <rect key="frame" x="137" y="42" width="46" height="30"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJp-ID-MLw">
+                                <rect key="frame" x="137" y="99" width="46" height="30"/>
+                                <state key="normal" title="Pause">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Luw-s3-L7p">
+                                <rect key="frame" x="137" y="163" width="46" height="30"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="lJZ-s8-VqL">
+                                <rect key="frame" x="101" y="224" width="205" height="31"/>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Progress" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="17c-4x-RQm">
+                                <rect key="frame" x="16" y="228" width="69" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Volume" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8m-xY-Kqc">
+                                <rect key="frame" x="16" y="287" width="63" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="JvX-Zs-ESR">
+                                <rect key="frame" x="101" y="283" width="205" height="31"/>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pk8-yz-wZZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G2R-Yt-l5r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="l7I-p7-mGJ" customClass="DFSoundPlayerBehavior">
+                    <connections>
+                        <outlet property="owner" destination="WDA-m9-QUY" id="JTK-NR-dqo"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="888" y="-448"/>
         </scene>
         <!--Contact Picker-->
         <scene sceneID="gZT-5f-lf3">
@@ -667,7 +730,7 @@
                     </connections>
                 </customObject>
             </objects>
-            <point key="canvasLocation" x="856" y="841"/>
+            <point key="canvasLocation" x="888" y="843"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1od-sl-uxg">
