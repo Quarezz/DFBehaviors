@@ -10,7 +10,7 @@
 
 @interface DFCollectionViewDataSourceBehavior ()
 
-@property (nonatomic, strong) UICollectionView *collectionView;
+@property (nonatomic, strong) IBOutlet UICollectionView *collectionView;
 
 @end
 
