@@ -10,4 +10,6 @@
 
 @interface DFTableViewDataSourceBehavior : DFBehavior <UITableViewDataSource>
 
+@property (nonatomic, strong) UITableView *tableView;
+
 @end
