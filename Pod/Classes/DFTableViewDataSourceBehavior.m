@@ -8,6 +8,12 @@
 
 #import "DFTableViewDataSourceBehavior.h"
 
+@interface DFTableViewDataSourceBehavior ()
+
+@property (nonatomic, strong) UITableView *tableView;
+
+@end
+
 @implementation DFTableViewDataSourceBehavior
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section

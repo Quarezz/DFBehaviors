@@ -10,6 +10,4 @@
 
 @interface DFCollectionViewDataSourceBehavior : DFBehavior <UICollectionViewDataSource>
 
-@property (strong, nonatomic) UICollectionView *collectionView;
-
 @end
