@@ -10,4 +10,6 @@
 
 @interface DFCollectionViewDataSourceBehavior : DFBehavior <UICollectionViewDataSource>
 
+@property (nonatomic, strong) IBOutlet UICollectionView *collectionView;
+
 @end

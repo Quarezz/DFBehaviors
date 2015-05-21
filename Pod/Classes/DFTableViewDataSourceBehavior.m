@@ -10,8 +10,6 @@
 
 @interface DFTableViewDataSourceBehavior ()
 
-@property (nonatomic, strong) IBOutlet UITableView *tableView;
-
 @end
 
 @implementation DFTableViewDataSourceBehavior
