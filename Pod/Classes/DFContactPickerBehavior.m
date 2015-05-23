@@ -21,60 +21,69 @@
 
 - (void)peoplePickerNavigationController:(ABPeoplePickerNavigationController *)peoplePicker didSelectPerson:(ABRecordRef)person
 {
-    self.personFirstName = (__bridge NSString *)ABRecordCopyValue(person, kABPersonFirstNameProperty);
-    self.personMiddleName = (__bridge NSString *)ABRecordCopyValue(person, kABPersonMiddleNameProperty);
-    self.personLasttName = (__bridge NSString *)ABRecordCopyValue(person, kABPersonLastNameProperty);
+    self.personFirstName = (__bridge_transfer NSString *)ABRecordCopyValue(person, kABPersonFirstNameProperty);
+    self.personMiddleName = (__bridge_transfer NSString *)ABRecordCopyValue(person, kABPersonMiddleNameProperty);
+    self.personLasttName = (__bridge_transfer NSString *)ABRecordCopyValue(person, kABPersonLastNameProperty);
     
-    self.personPrefix = (__bridge NSString *)ABRecordCopyValue(person, kABPersonPrefixProperty);
-    self.personFirstNamePhonetic = (__bridge NSString *)ABRecordCopyValue(person, kABPersonFirstNamePhoneticProperty);
-    self.personLastNamePhonetic = (__bridge NSString *)ABRecordCopyValue(person, kABPersonLastNamePhoneticProperty);
-    self.personMiddleNamePhonetic = (__bridge NSString *)ABRecordCopyValue(person, kABPersonMiddleNamePhoneticProperty);
+    self.personPrefix = (__bridge_transfer NSString *)ABRecordCopyValue(person, kABPersonPrefixProperty);
+    self.personFirstNamePhonetic = (__bridge_transfer NSString *)ABRecordCopyValue(person, kABPersonFirstNamePhoneticProperty);
+    self.personLastNamePhonetic = (__bridge_transfer NSString *)ABRecordCopyValue(person, kABPersonLastNamePhoneticProperty);
+    self.personMiddleNamePhonetic = (__bridge_transfer NSString *)ABRecordCopyValue(person, kABPersonMiddleNamePhoneticProperty);
     
-    self.personOrganization = (__bridge NSString *)ABRecordCopyValue(person, kABPersonOrganizationProperty);
-    self.personJobTitle = (__bridge NSString *)ABRecordCopyValue(person, kABPersonJobTitleProperty);
-    self.personDepartament = (__bridge NSString *)ABRecordCopyValue(person, kABPersonDepartmentProperty);
+    self.personOrganization = (__bridge_transfer NSString *)ABRecordCopyValue(person, kABPersonOrganizationProperty);
+    self.personJobTitle = (__bridge_transfer NSString *)ABRecordCopyValue(person, kABPersonJobTitleProperty);
+    self.personDepartament = (__bridge_transfer NSString *)ABRecordCopyValue(person, kABPersonDepartmentProperty);
     
-    ABMutableMultiValueRef email = ABRecordCopyValue( person, kABPersonEmailProperty );
-    CFStringRef emailRef = ABMultiValueCopyValueAtIndex(email, 0);
+    self.personEmail = (__bridge_transfer NSString *)ABRecordCopyValue( person, kABPersonEmailProperty );
+    self.personBirthday = (__bridge_transfer NSDate *)ABRecordCopyValue(person, kABPersonBirthdayProperty);
+    self.personNote = (__bridge_transfer NSString *)ABRecordCopyValue(person, kABPersonNoteProperty);
     
-    self.personEmail = (__bridge NSString *)emailRef;
-    self.personBirthday = (__bridge NSDate *)ABRecordCopyValue(person, kABPersonBirthdayProperty);
-    self.personNote = (__bridge NSString *)ABRecordCopyValue(person, kABPersonNoteProperty);
+    self.personCreationDate = (__bridge_transfer NSDate *)ABRecordCopyValue(person, kABPersonCreationDateProperty);
+    self.personModificationDate = (__bridge_transfer NSDate *)ABRecordCopyValue(person, kABPersonModificationDateProperty);
     
-    self.personCreationDate = (__bridge NSDate *)ABRecordCopyValue(person, kABPersonCreationDateProperty);
-    self.personModificationDate = (__bridge NSDate *)ABRecordCopyValue(person, kABPersonModificationDateProperty);
-    
-    CFTypeRef addressProperty = ABRecordCopyValue((ABRecordRef)person, kABPersonAddressProperty);
+    CFTypeRef addressProperty = ABRecordCopyValue(person, kABPersonAddressProperty);
     
     if (addressProperty)
     {
-        NSDictionary *addressDict = (__bridge NSDictionary *)CFArrayGetValueAtIndex((CFArrayRef)ABMultiValueCopyArrayOfAllValues(addressProperty), 0);
+        NSArray *address = (__bridge NSArray *)ABMultiValueCopyArrayOfAllValues(addressProperty);
         
-        if (addressDict[@"Street"]) self.personAddressStreet = addressDict[@"Street"];
-        if (addressDict[@"City"]) self.personAddressCity = addressDict[@"City"];
-        if (addressDict[@"State"]) self.personAddressState = addressDict[@"State"];
-        if (addressDict[@"ZIP"]) self.personAddressZIP = addressDict[@"ZIP"];
-        if (addressDict[@"Country"]) self.personAddressCountry = addressDict[@"Country"];
-        if (addressDict[@"CountryCode"]) self.personAddressCountryCode = addressDict[@"CountryCode"];
+        for (NSDictionary *addressDict in address) {
+            if (addressDict[@"Street"]) self.personAddressStreet = addressDict[@"Street"];
+            if (addressDict[@"City"]) self.personAddressCity = addressDict[@"City"];
+            if (addressDict[@"State"]) self.personAddressState = addressDict[@"State"];
+            if (addressDict[@"ZIP"]) self.personAddressZIP = addressDict[@"ZIP"];
+            if (addressDict[@"Country"]) self.personAddressCountry = addressDict[@"Country"];
+            if (addressDict[@"CountryCode"]) self.personAddressCountryCode = addressDict[@"CountryCode"];
+        }
+        
+        CFBridgingRelease((__bridge CFTypeRef)(address));
     }
+    
+    CFBridgingRelease(addressProperty);
     
     if (person != nil && ABPersonHasImageData(person))
     {
         if ( &ABPersonCopyImageDataWithFormat != nil ) {
-            self.personPhoto = (__bridge NSData *)ABPersonCopyImageDataWithFormat(person, kABPersonImageFormatThumbnail);
+            self.personPhoto = (__bridge_transfer NSData *)ABPersonCopyImageDataWithFormat(person, kABPersonImageFormatThumbnail);
         }
     }
+    else
+    {
+        self.personPhoto = nil;
+    }
     
-    ABMultiValueRef phones =(__bridge ABMultiValueRef)((__bridge NSString*)ABRecordCopyValue(person, kABPersonPhoneProperty));
+    ABMultiValueRef phones = ABRecordCopyValue(person, kABPersonPhoneProperty);
     NSString* mobileLabel;
     NSMutableArray *phoneNumbers = [NSMutableArray array];
     for(CFIndex i = 0; i < ABMultiValueGetCount(phones); i++) {
-        mobileLabel = (__bridge NSString*)ABMultiValueCopyLabelAtIndex(phones, i);
+        mobileLabel = (__bridge_transfer NSString*)ABMultiValueCopyLabelAtIndex(phones, i);
         if([mobileLabel isEqualToString:(NSString *)kABPersonPhoneMobileLabel])
         {
-            [phoneNumbers addObject:(__bridge NSString*)ABMultiValueCopyValueAtIndex(phones, i)];
+            [phoneNumbers addObject:(__bridge_transfer NSString*)ABMultiValueCopyValueAtIndex(phones, i)];
         }
     }
+    
+    CFBridgingRelease(phones);
     
     self.personPhoneNumbers = phoneNumbers;
     
