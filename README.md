@@ -6,9 +6,9 @@
 
 ## About
 
-DFBehaviors is a collection of usable Behaviors. Inspiried by my friend Krzysztof Zabłocki. His article about Behaviors can be found here: http://www.objc.io/issue-13/behaviors.html
+DFBehaviors is a collection of usable Behaviors. Inspired by my friend Krzysztof Zabłocki. His article about Behaviors can be found here: http://www.objc.io/issue-13/behaviors.html
 
-## How this works?
+## How does it works?
 
 You simply drop NSObject to XIB, change its class to some of Behavior, and connect all needed IBOutlets and/or change settings in interface builder with IBInspectable properties. All behaviors inhertis from UIControl, so you can also observe value change notifications. Both solutions are shown in examples.
 
@@ -24,6 +24,10 @@ DFBehaviors is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
     pod "DFBehaviors"
+
+## Your feedback
+
+I love to get feedback from you, fell free to post here or let me know through my email.
 
 ## Author
 
