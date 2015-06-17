@@ -36,7 +36,14 @@
     self.organizationLabel.text = sender.personOrganization;
     self.jobTitleLabel.text = sender.personJobTitle;
     self.departamentLabel.text = sender.personDepartament;
-    self.emailLabel.text = sender.personEmail;
+    
+    NSString *emails = @"";
+    
+    for (NSString *email in sender.personEmail){
+        emails = [emails stringByAppendingString:[NSString stringWithFormat:@"%@ ", email]];
+    }
+    
+    self.emailLabel.text = emails;
     self.birthdayLabel.text = [NSString stringWithFormat:@"%@", sender.personBirthday];
     self.noteLabel.text = sender.personNote;
     
@@ -49,9 +56,6 @@
     [self.photo setImage:[UIImage imageWithData:sender.personPhoto scale:1]];
     
     [self.tableView reloadData];
-    
-    NSLog(@"%@", sender);
-    NSLog(@"%@ %@", self.firstNameLabel.text, self.lastNameLabel.text);
 }
 
 @end
