@@ -34,12 +34,18 @@
     self.personJobTitle = (__bridge_transfer NSString *)ABRecordCopyValue(person, kABPersonJobTitleProperty);
     self.personDepartament = (__bridge_transfer NSString *)ABRecordCopyValue(person, kABPersonDepartmentProperty);
     
-    self.personEmail = (__bridge_transfer NSString *)ABRecordCopyValue( person, kABPersonEmailProperty );
     self.personBirthday = (__bridge_transfer NSDate *)ABRecordCopyValue(person, kABPersonBirthdayProperty);
     self.personNote = (__bridge_transfer NSString *)ABRecordCopyValue(person, kABPersonNoteProperty);
     
     self.personCreationDate = (__bridge_transfer NSDate *)ABRecordCopyValue(person, kABPersonCreationDateProperty);
     self.personModificationDate = (__bridge_transfer NSDate *)ABRecordCopyValue(person, kABPersonModificationDateProperty);
+    
+    CFTypeRef emailProperty = ABRecordCopyValue(person, kABPersonEmailProperty);
+    
+    if (emailProperty)
+    {
+        self.personEmail = (__bridge NSArray *)ABMultiValueCopyArrayOfAllValues(emailProperty);
+    }
     
     CFTypeRef addressProperty = ABRecordCopyValue(person, kABPersonAddressProperty);
     

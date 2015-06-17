@@ -28,7 +28,7 @@
 @property (nonatomic, strong) NSString *personOrganization;
 @property (nonatomic, strong) NSString *personJobTitle;
 @property (nonatomic, strong) NSString *personDepartament;
-@property (nonatomic, strong) NSString *personEmail;
+@property (nonatomic, strong) NSArray *personEmail;
 @property (nonatomic, strong) NSDate *personBirthday;
 @property (nonatomic, strong) NSString *personNote;
 
