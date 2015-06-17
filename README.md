@@ -27,7 +27,7 @@ it, simply add the following line to your Podfile:
 
 ## Your feedback
 
-I love to get feedback from you, fell free to post here or let me know through my email bieleckicezary@gmail.com
+I love to get feedback from you, fell free to post here or let me know through my email.
 
 ## Author
 
