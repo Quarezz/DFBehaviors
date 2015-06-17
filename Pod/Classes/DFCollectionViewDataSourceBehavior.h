@@ -8,7 +8,7 @@
 
 #import "DFBehavior.h"
 
-@interface DFCollectionViewDataSourceBehavior : DFBehavior <UICollectionViewDataSource>
+@interface DFCollectionViewDataSourceBehavior : DFBehavior <UICollectionViewDataSource, UICollectionViewDelegate>
 
 @property (nonatomic, strong) IBOutlet UICollectionView *collectionView;
 

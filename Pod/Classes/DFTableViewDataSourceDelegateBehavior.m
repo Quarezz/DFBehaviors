@@ -6,13 +6,13 @@
 //
 //
 
-#import "DFTableViewDataSourceBehavior.h"
+#import "DFTableViewDataSourceDelegateBehavior.h"
 
-@interface DFTableViewDataSourceBehavior ()
+@interface DFTableViewDataSourceDelegateBehavior ()
 
 @end
 
-@implementation DFTableViewDataSourceBehavior
+@implementation DFTableViewDataSourceDelegateBehavior
 
 #pragma mark - UITableViewDataSource
 

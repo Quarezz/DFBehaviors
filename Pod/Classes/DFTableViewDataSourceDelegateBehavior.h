@@ -8,7 +8,7 @@
 
 #import "DFBehavior.h"
 
-@interface DFTableViewDataSourceBehavior : DFBehavior <UITableViewDataSource, UITableViewDelegate>
+@interface DFTableViewDataSourceDelegateBehavior : DFBehavior <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
 
