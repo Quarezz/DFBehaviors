@@ -1,4 +1,4 @@
-# CZBBehaviors
+# CBIBehaviors
 
 [![Version](https://img.shields.io/cocoapods/v/DFBehaviors.svg?style=flat)](http://cocoadocs.org/docsets/DFBehaviors)
 [![License](https://img.shields.io/cocoapods/l/DFBehaviors.svg?style=flat)](http://cocoadocs.org/docsets/DFBehaviors)
