@@ -25,6 +25,18 @@
             [self performSegueWithIdentifier:@"gotoimage" sender:nil];
             break;
             
+        case 3:
+            [self performSegueWithIdentifier:@"gototableview" sender:nil];
+            break;
+            
+        case 4:
+            [self performSegueWithIdentifier:@"gotocollectionview" sender:nil];
+            break;
+            
+        case 5:
+            [self performSegueWithIdentifier:@"gotosound" sender:nil];
+            break;
+            
         default:
             break;
     }

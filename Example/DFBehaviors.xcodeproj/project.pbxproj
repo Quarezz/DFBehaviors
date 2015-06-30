@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		032F497A1B42A51F007BB3A9 /* DFExampleTableViewDataSourceDelegateBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 032F49791B42A51F007BB3A9 /* DFExampleTableViewDataSourceDelegateBehavior.m */; };
+		032F497D1B42A796007BB3A9 /* DFExampleCollectionViewDataSourceDelegateBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 032F497C1B42A796007BB3A9 /* DFExampleCollectionViewDataSourceDelegateBehavior.m */; };
+		032F49801B42A7B4007BB3A9 /* DFExampleCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 032F497F1B42A7B4007BB3A9 /* DFExampleCollectionViewController.m */; };
 		033E79EB1AF6E6A000AC8883 /* DFSoundPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 033E79EA1AF6E6A000AC8883 /* DFSoundPlayerViewController.m */; };
 		035087001B0DDC3A004F92DC /* DFTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 035086FF1B0DDC3A004F92DC /* DFTableViewController.m */; };
-		035087031B0DDCA2004F92DC /* DFExampleTableViewDataSourceBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 035087021B0DDCA2004F92DC /* DFExampleTableViewDataSourceBehavior.m */; };
 		03862DBA1AF17C660079EEB9 /* DFMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03862DB91AF17C660079EEB9 /* DFMenuTableViewController.m */; };
 		03862DBD1AF17C7C0079EEB9 /* DFContactPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03862DBC1AF17C7C0079EEB9 /* DFContactPickerViewController.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -41,12 +43,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		032F49781B42A51F007BB3A9 /* DFExampleTableViewDataSourceDelegateBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFExampleTableViewDataSourceDelegateBehavior.h; sourceTree = "<group>"; };
+		032F49791B42A51F007BB3A9 /* DFExampleTableViewDataSourceDelegateBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFExampleTableViewDataSourceDelegateBehavior.m; sourceTree = "<group>"; };
+		032F497B1B42A796007BB3A9 /* DFExampleCollectionViewDataSourceDelegateBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFExampleCollectionViewDataSourceDelegateBehavior.h; sourceTree = "<group>"; };
+		032F497C1B42A796007BB3A9 /* DFExampleCollectionViewDataSourceDelegateBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFExampleCollectionViewDataSourceDelegateBehavior.m; sourceTree = "<group>"; };
+		032F497E1B42A7B4007BB3A9 /* DFExampleCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFExampleCollectionViewController.h; sourceTree = "<group>"; };
+		032F497F1B42A7B4007BB3A9 /* DFExampleCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFExampleCollectionViewController.m; sourceTree = "<group>"; };
 		033E79E91AF6E6A000AC8883 /* DFSoundPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFSoundPlayerViewController.h; sourceTree = "<group>"; };
 		033E79EA1AF6E6A000AC8883 /* DFSoundPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFSoundPlayerViewController.m; sourceTree = "<group>"; };
 		035086FE1B0DDC3A004F92DC /* DFTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFTableViewController.h; sourceTree = "<group>"; };
 		035086FF1B0DDC3A004F92DC /* DFTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFTableViewController.m; sourceTree = "<group>"; };
-		035087011B0DDCA2004F92DC /* DFExampleTableViewDataSourceBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFExampleTableViewDataSourceBehavior.h; sourceTree = "<group>"; };
-		035087021B0DDCA2004F92DC /* DFExampleTableViewDataSourceBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFExampleTableViewDataSourceBehavior.m; sourceTree = "<group>"; };
 		03862DB81AF17C660079EEB9 /* DFMenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFMenuTableViewController.h; sourceTree = "<group>"; };
 		03862DB91AF17C660079EEB9 /* DFMenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFMenuTableViewController.m; sourceTree = "<group>"; };
 		03862DBB1AF17C7C0079EEB9 /* DFContactPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFContactPickerViewController.h; sourceTree = "<group>"; };
@@ -160,19 +166,23 @@
 				6003F59D195388D20070C39A /* DFAppDelegate.m */,
 				03862DBB1AF17C7C0079EEB9 /* DFContactPickerViewController.h */,
 				03862DBC1AF17C7C0079EEB9 /* DFContactPickerViewController.m */,
+				032F497E1B42A7B4007BB3A9 /* DFExampleCollectionViewController.h */,
+				032F497F1B42A7B4007BB3A9 /* DFExampleCollectionViewController.m */,
+				032F497B1B42A796007BB3A9 /* DFExampleCollectionViewDataSourceDelegateBehavior.h */,
+				032F497C1B42A796007BB3A9 /* DFExampleCollectionViewDataSourceDelegateBehavior.m */,
+				032F49781B42A51F007BB3A9 /* DFExampleTableViewDataSourceDelegateBehavior.h */,
+				032F49791B42A51F007BB3A9 /* DFExampleTableViewDataSourceDelegateBehavior.m */,
 				6003F5A5195388D20070C39A /* DFImagePickerViewController.h */,
 				6003F5A6195388D20070C39A /* DFImagePickerViewController.m */,
 				03862DB81AF17C660079EEB9 /* DFMenuTableViewController.h */,
 				03862DB91AF17C660079EEB9 /* DFMenuTableViewController.m */,
-				6003F5A8195388D20070C39A /* Images.xcassets */,
-				6003F59F195388D20070C39A /* Main_iPhone.storyboard */,
-				6003F594195388D20070C39A /* Supporting Files */,
 				033E79E91AF6E6A000AC8883 /* DFSoundPlayerViewController.h */,
 				033E79EA1AF6E6A000AC8883 /* DFSoundPlayerViewController.m */,
 				035086FE1B0DDC3A004F92DC /* DFTableViewController.h */,
 				035086FF1B0DDC3A004F92DC /* DFTableViewController.m */,
-				035087011B0DDCA2004F92DC /* DFExampleTableViewDataSourceBehavior.h */,
-				035087021B0DDCA2004F92DC /* DFExampleTableViewDataSourceBehavior.m */,
+				6003F5A8195388D20070C39A /* Images.xcassets */,
+				6003F59F195388D20070C39A /* Main_iPhone.storyboard */,
+				6003F594195388D20070C39A /* Supporting Files */,
 			);
 			path = DFBehaviors;
 			sourceTree = "<group>";
@@ -382,14 +392,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				032F497A1B42A51F007BB3A9 /* DFExampleTableViewDataSourceDelegateBehavior.m in Sources */,
 				03862DBA1AF17C660079EEB9 /* DFMenuTableViewController.m in Sources */,
 				035087001B0DDC3A004F92DC /* DFTableViewController.m in Sources */,
 				6003F59E195388D20070C39A /* DFAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* DFImagePickerViewController.m in Sources */,
 				03862DBD1AF17C7C0079EEB9 /* DFContactPickerViewController.m in Sources */,
-				035087031B0DDCA2004F92DC /* DFExampleTableViewDataSourceBehavior.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				033E79EB1AF6E6A000AC8883 /* DFSoundPlayerViewController.m in Sources */,
+				032F497D1B42A796007BB3A9 /* DFExampleCollectionViewDataSourceDelegateBehavior.m in Sources */,
+				032F49801B42A7B4007BB3A9 /* DFExampleCollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

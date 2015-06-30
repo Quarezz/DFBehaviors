@@ -12,9 +12,10 @@
 
 @interface DFBehavior : UIControl
 
-@property(nonatomic, weak) IBOutlet id owner;
+/*!
+ * @brief The ViewController class' car object.
+ */
 
-- (void)bindLifetimeToObject:(id)object;
-- (void)releaseLifetimeFromObject:(id)object;
+@property (nonatomic, weak) IBOutlet id owner;
 
 @end
