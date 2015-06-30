@@ -48,17 +48,25 @@
 
 - (UIAlertAction *)alertActionWithTitle:(NSString *)title sourceType:(UIImagePickerControllerSourceType)sourceType
 {
+    __weak typeof(self) weakSelf = self;
+    
     return [UIAlertAction actionWithTitle:title style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        
+        __strong typeof(self) strongSelf = weakSelf;
+        
+        if (!strongSelf) {
+            return;
+        }
         
         if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
         {
-            self.popOverController = [[UIPopoverController alloc] initWithContentViewController:[self imagePickerControllerWithSourceType:sourceType]];
+            strongSelf.popOverController = [[UIPopoverController alloc] initWithContentViewController:[strongSelf imagePickerControllerWithSourceType:sourceType]];
             
-            [self.popOverController presentPopoverFromRect:self.targetButton.frame inView:self.targetButton permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+            [strongSelf.popOverController presentPopoverFromRect:strongSelf.targetButton.frame inView:strongSelf.targetButton permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
         }
         else if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
         {
-            [self.owner presentViewController:[self imagePickerControllerWithSourceType:sourceType] animated:YES completion:nil];
+            [strongSelf.owner presentViewController:[strongSelf imagePickerControllerWithSourceType:sourceType] animated:YES completion:nil];
         }
     }];
 }
