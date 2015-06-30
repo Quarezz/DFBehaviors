@@ -15,5 +15,5 @@ Pod::Spec.new do |s|
     'DFBehaviors' => ['Pod/Assets/*.png']
   }
 
-  # s.frameworks = 'UIKit', 'BlocksKit', 'UIActionSheet+Blocks'
+  # s.frameworks = 'UIKit', 'BlocksKit', 'UIActionSheet+Blocks' , 'AVFoundation'
 end

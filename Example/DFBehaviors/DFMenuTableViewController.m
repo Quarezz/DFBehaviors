@@ -21,19 +21,19 @@
             [self performSegueWithIdentifier:@"gotocontact" sender:nil];
             break;
             
-        case 1:
+        case 2:
             [self performSegueWithIdentifier:@"gotoimage" sender:nil];
             break;
             
-        case 3:
+        case 4:
             [self performSegueWithIdentifier:@"gototableview" sender:nil];
             break;
             
-        case 4:
+        case 1:
             [self performSegueWithIdentifier:@"gotocollectionview" sender:nil];
             break;
             
-        case 5:
+        case 3:
             [self performSegueWithIdentifier:@"gotosound" sender:nil];
             break;
             

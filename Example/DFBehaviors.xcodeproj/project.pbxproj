@@ -10,6 +10,8 @@
 		032F497A1B42A51F007BB3A9 /* DFExampleTableViewDataSourceDelegateBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 032F49791B42A51F007BB3A9 /* DFExampleTableViewDataSourceDelegateBehavior.m */; };
 		032F497D1B42A796007BB3A9 /* DFExampleCollectionViewDataSourceDelegateBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 032F497C1B42A796007BB3A9 /* DFExampleCollectionViewDataSourceDelegateBehavior.m */; };
 		032F49801B42A7B4007BB3A9 /* DFExampleCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 032F497F1B42A7B4007BB3A9 /* DFExampleCollectionViewController.m */; };
+		032F49821B42AAF1007BB3A9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 032F49811B42AAF1007BB3A9 /* AVFoundation.framework */; };
+		032F49851B42B08C007BB3A9 /* sound.caf in Resources */ = {isa = PBXBuildFile; fileRef = 032F49841B42B08C007BB3A9 /* sound.caf */; };
 		033E79EB1AF6E6A000AC8883 /* DFSoundPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 033E79EA1AF6E6A000AC8883 /* DFSoundPlayerViewController.m */; };
 		035087001B0DDC3A004F92DC /* DFTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 035086FF1B0DDC3A004F92DC /* DFTableViewController.m */; };
 		03862DBA1AF17C660079EEB9 /* DFMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03862DB91AF17C660079EEB9 /* DFMenuTableViewController.m */; };
@@ -49,6 +51,8 @@
 		032F497C1B42A796007BB3A9 /* DFExampleCollectionViewDataSourceDelegateBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFExampleCollectionViewDataSourceDelegateBehavior.m; sourceTree = "<group>"; };
 		032F497E1B42A7B4007BB3A9 /* DFExampleCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFExampleCollectionViewController.h; sourceTree = "<group>"; };
 		032F497F1B42A7B4007BB3A9 /* DFExampleCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFExampleCollectionViewController.m; sourceTree = "<group>"; };
+		032F49811B42AAF1007BB3A9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		032F49841B42B08C007BB3A9 /* sound.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sound.caf; sourceTree = "<group>"; };
 		033E79E91AF6E6A000AC8883 /* DFSoundPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFSoundPlayerViewController.h; sourceTree = "<group>"; };
 		033E79EA1AF6E6A000AC8883 /* DFSoundPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFSoundPlayerViewController.m; sourceTree = "<group>"; };
 		035086FE1B0DDC3A004F92DC /* DFTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFTableViewController.h; sourceTree = "<group>"; };
@@ -93,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				032F49821B42AAF1007BB3A9 /* AVFoundation.framework in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
@@ -114,6 +119,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		032F49831B42B072007BB3A9 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				032F49841B42B08C007BB3A9 /* sound.caf */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
 		21EF5F53B06CAB2FB021F3DE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +162,7 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				032F49811B42AAF1007BB3A9 /* AVFoundation.framework */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
@@ -182,6 +196,7 @@
 				035086FF1B0DDC3A004F92DC /* DFTableViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F59F195388D20070C39A /* Main_iPhone.storyboard */,
+				032F49831B42B072007BB3A9 /* Sound */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
 			path = DFBehaviors;
@@ -311,6 +326,7 @@
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F5A1195388D20070C39A /* Main_iPhone.storyboard in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				032F49851B42B08C007BB3A9 /* sound.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
