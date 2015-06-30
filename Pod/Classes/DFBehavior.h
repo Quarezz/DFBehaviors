@@ -12,10 +12,6 @@
 
 @interface DFBehavior : UIControl
 
-/*!
- * @brief The ViewController class' car object.
- */
-
 @property (nonatomic, weak) IBOutlet id owner;
 
 @end

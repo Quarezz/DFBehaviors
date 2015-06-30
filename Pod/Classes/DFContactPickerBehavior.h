@@ -46,6 +46,12 @@
 
 @property (nonatomic, strong) NSArray *personPhoneNumbers;
 
+/**
+ *  @brief IBAction method that allows to pick contact from all contacts.
+ *
+ *  @param button
+ */
+
 - (IBAction)chooseContactButtonAction:(UIButton *)button;
 
 @end
