@@ -12,6 +12,10 @@
 
 @interface DFBehavior : UIControl
 
+/*
+ *  @brief Owner of the behavior. Setup this property to ensure that behavior will not be released.
+ */
+
 @property (nonatomic, weak) IBOutlet id owner;
 
 @end

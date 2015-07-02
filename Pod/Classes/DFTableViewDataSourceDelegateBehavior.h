@@ -10,6 +10,10 @@
 
 @interface DFTableViewDataSourceDelegateBehavior : DFBehavior <UITableViewDataSource, UITableViewDelegate>
 
+/*
+ *  @brief Table view that will be used in this behavior.
+ */
+
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
 
 @end
