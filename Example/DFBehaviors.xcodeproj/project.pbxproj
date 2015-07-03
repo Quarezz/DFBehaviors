@@ -565,7 +565,18 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
-				WARNING_CFLAGS = "-DNDEBUG";
+				WARNING_CFLAGS = (
+					"-DNDEBUG",
+					"-Wall",
+					"-Werror",
+					"-Wdeprecated-implementations",
+					"-Wimplicit-retain-self",
+					"-Wfloat-equal",
+					"-Wshadow",
+					"-Wnewline-eof",
+					"-Wconversion",
+					"-Wsign-compare",
+				);
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -588,7 +599,18 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
-				WARNING_CFLAGS = "-DNDEBUG";
+				WARNING_CFLAGS = (
+					"-DNDEBUG",
+					"-Wall",
+					"-Werror",
+					"-Wdeprecated-implementations",
+					"-Wimplicit-retain-self",
+					"-Wfloat-equal",
+					"-Wshadow",
+					"-Wnewline-eof",
+					"-Wconversion",
+					"-Wsign-compare",
+				);
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
